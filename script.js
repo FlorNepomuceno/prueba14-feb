@@ -77,7 +77,7 @@ window.addEventListener('DOMContentLoaded', () => {
           musicStatus.textContent = 'Música: ON';
         })
         .catch(() => {
-          musicStatus.textContent = 'Música: OFF';
+          musicStatus.textContent = 'Música: OFF (faltó cargar assets/music.mp3)';
         });
       return;
     }

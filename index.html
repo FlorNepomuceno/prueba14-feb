@@ -33,23 +33,33 @@
             <div class="viewport" id="viewport">
               <div class="photo-roll" id="photoRoll">
                 <article class="polaroid tilt-left">
-                  <div class="polaroid-image image-1"></div>
+                  <div class="polaroid-image">
+                    <img src="assets/foto-1.jpg" alt="Foto romántica 1" loading="lazy" />
+                  </div>
                   <p>Nuestra primera cita</p>
                 </article>
                 <article class="polaroid tilt-right">
-                  <div class="polaroid-image image-2"></div>
-                  <p>Risas</p>
+                  <div class="polaroid-image">
+                    <img src="assets/foto-2.jpg" alt="Foto romántica 2" loading="lazy" />
+                  </div>
+                  <p>Noches juntos</p>
                 </article>
                 <article class="polaroid tilt-left">
-                  <div class="polaroid-image image-3"></div>
-                  <p>Viaje</p>
-                </article>
-                <article class="polaroid tilt-right">
-                  <div class="polaroid-image image-4"></div>
+                  <div class="polaroid-image">
+                    <img src="assets/foto-3.jpg" alt="Foto romántica 3" loading="lazy" />
+                  </div>
                   <p>Momentos</p>
                 </article>
+                <article class="polaroid tilt-right">
+                  <div class="polaroid-image">
+                    <img src="assets/foto-4.jpg" alt="Foto romántica 4" loading="lazy" />
+                  </div>
+                  <p>Conciertos</p>
+                </article>
                 <article class="polaroid tilt-left">
-                  <div class="polaroid-image image-5"></div>
+                  <div class="polaroid-image">
+                    <img src="assets/foto-5.jpg" alt="Foto romántica 5" loading="lazy" />
+                  </div>
                   <p>Siempre</p>
                 </article>
               </div>
@@ -59,12 +69,16 @@
               <button id="musicToggle" class="music-button" type="button">Iniciar música</button>
             </div>
 
+            <p class="music-note">
+              Para usar la canción del video, guarda su audio como <strong>assets/music.mp3</strong>.
+            </p>
+
             <div class="progress-track" aria-hidden="true">
               <span class="progress-fill" id="progressFill"></span>
             </div>
 
-            <!-- Coloca tu archivo music.mp3 en la misma carpeta del proyecto. -->
-            <audio id="bgMusic" src="music.mp3" loop preload="none"></audio>
+            <!-- Coloca aquí el audio del video solicitado: /assets/music.mp3 -->
+            <audio id="bgMusic" src="assets/music.mp3" loop preload="none"></audio>
           </div>
         </div>
       </section>
