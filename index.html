@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>14 de febrero | Caja musical</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <h1>14 de febrero</h1>
+      <p>Una melodía suave de recuerdos que siguen latiendo.</p>
+    </header>
+
+    <main>
+      <section class="music-section" id="musicSection" aria-label="Caja musical">
+        <div class="sticky-box">
+          <div class="music-box">
+            <span class="roller roller-left" aria-hidden="true"></span>
+            <span class="roller roller-right" aria-hidden="true"></span>
+
+            <div class="box-header">
+              <h2>Caja musical</h2>
+              <p class="music-status" id="musicStatus">Música: OFF</p>
+            </div>
+
+            <div class="viewport" id="viewport">
+              <div class="photo-roll" id="photoRoll">
+                <article class="polaroid tilt-left">
+                  <div class="polaroid-image">
+                    <img src="assets/foto-1.jpg" alt="Foto romántica 1" loading="lazy" />
+                  </div>
+                  <p>Nuestra primera cita</p>
+                </article>
+                <article class="polaroid tilt-right">
+                  <div class="polaroid-image">
+                    <img src="assets/foto-2.jpg" alt="Foto romántica 2" loading="lazy" />
+                  </div>
+                  <p>Noches juntos</p>
+                </article>
+                <article class="polaroid tilt-left">
+                  <div class="polaroid-image">
+                    <img src="assets/foto-3.jpg" alt="Foto romántica 3" loading="lazy" />
+                  </div>
+                  <p>Momentos</p>
+                </article>
+                <article class="polaroid tilt-right">
+                  <div class="polaroid-image">
+                    <img src="assets/foto-4.jpg" alt="Foto romántica 4" loading="lazy" />
+                  </div>
+                  <p>Conciertos</p>
+                </article>
+                <article class="polaroid tilt-left">
+                  <div class="polaroid-image">
+                    <img src="assets/foto-5.jpg" alt="Foto romántica 5" loading="lazy" />
+                  </div>
+                  <p>Siempre</p>
+                </article>
+              </div>
+            </div>
+
+            <div class="controls">
+              <button id="musicToggle" class="music-button" type="button">Iniciar música</button>
+            </div>
+
+            <p class="music-note">
+              Para usar la canción del video, guarda su audio como <strong>assets/music.mp3</strong>.
+            </p>
+
+            <div class="progress-track" aria-hidden="true">
+              <span class="progress-fill" id="progressFill"></span>
+            </div>
+
+            <!-- Coloca aquí el audio del video solicitado: /assets/music.mp3 -->
+            <audio id="bgMusic" src="assets/music.mp3" loop preload="none"></audio>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing">
+        <p>
+          Gracias por cada instante compartido.<br />
+          Que esta historia siga sonando bonito.
+        </p>
+        <button id="repeatBtn" class="repeat-button" type="button">Repetir</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
